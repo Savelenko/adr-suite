@@ -78,11 +78,3 @@ argumentParser =
           verbose : optional $ flag ["--verbose", "-v"] "Print additional details when listing ADRs"
         }
      ]
-
-{- NEXT:
-
-* Make an npm packages with easy to use "executable" and all the metadata.
-
-* Continue implementing status setting.
-
--}

@@ -58,8 +58,5 @@ template =
   now "## Consequences\n" &
   now "\n"
 
--- IDEA: For inserting or updating a status, parse the existing ADR into a holey monoid where the hole is the new
--- status. Is this possible?
-
--- IDEA: Is it possible to define a PS-specific holey monoid which "builds" a record parameter instead of a curried
+-- IDEA: Is it possible to define a PS-specific "holey monoid" which "builds" a record parameter instead of a curried
 -- function?
