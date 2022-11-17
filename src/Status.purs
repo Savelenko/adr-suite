@@ -8,7 +8,7 @@ import Data.Show.Generic (genericShow)
 import Data.Tuple (Tuple(..))
 import Parsing (Parser, runParser)
 import Parsing.String (anyTill, rest, string)
-import Template (Template, later, now, run, (&))
+import Template (Template, later, now, run, (++))
 
 {----------------------------------------------------------------------------------------------------------------------}
 
@@ -32,9 +32,9 @@ statusTemplate = do
   afterStatus <- rest
   let
     template =
-      now beforeStatus &
-      now "## Status\n" &
-      later (\(s :: Status) -> show s) &
+      now beforeStatus ++
+      now "## Status\n" ++
+      later (\(s :: Status) -> show s) ++
       now afterStatus
   pure template
 

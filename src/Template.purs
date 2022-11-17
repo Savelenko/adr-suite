@@ -29,7 +29,7 @@ instance Monad (Template r)
 instance Semigroupoid Template where
   compose f g = f `ibind` \a -> g `ibind` \b -> now (a `append` b)
 
-infixr 9 compose as &
+infixr 9 compose as ++
 
 instance Category Template where
   identity = now mempty
@@ -43,6 +43,9 @@ now a = Template (F.applyFlipped a)
 
 later :: forall a r. (a -> String) -> Template r (a -> r)
 later f = Template (composeFlipped f)
+
+laterShow :: forall a r. Show a => Template r (a -> r)
+laterShow = later show
 
 run :: forall a. Template String a -> a
 run m = runHM m identity

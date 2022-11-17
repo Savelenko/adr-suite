@@ -10,6 +10,8 @@ I just started working on this and work progresses (very) slowly. There is no pa
 
 - Creating a new ADR (kind of)
 
+    Try `node dist/adr.js new "My first ADR" --verbose`.
+
 ## Running the tool
 
 I wouldn't call it "using" yet, but the tool can be run after building it. Use the following command:

@@ -7,7 +7,7 @@ import ADR as ADR
 import ArgParse.Basic (ArgParser, anyNotFlag, choose, command, flag, flagHelp, flagInfo, fromRecord, optional, parseArgs, printArgError)
 import Data.Array (drop, filter)
 import Data.Either (Either(..))
-import Data.Foldable (fold, foldMap, for_)
+import Data.Foldable (foldMap, for_)
 import Data.Maybe (Maybe, fromMaybe)
 import Data.Monoid.Endo (Endo(..))
 import Data.Newtype (ala)
