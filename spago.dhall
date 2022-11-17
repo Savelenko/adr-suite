@@ -26,7 +26,6 @@ to generate this file without the comments in this block.
   , "node-process"
   , "parsing"
   , "prelude"
-  , "strings"
   , "tuples"
   ]
 , packages = ./packages.dhall
