@@ -24,6 +24,7 @@ You will need:
 
 * PureScript compiler (`purs`) 
 * PureScript Spago build and package manager tool (`spago`)
+* `esbuild`
 * `npm`
 * Visual Studio Code with the `PureScript IDE` extention
 
@@ -31,7 +32,7 @@ To set this up follow these instructions.
 
 1. Clone the repository.
 
-2. Run `npm install`. This should install `purs` and `spago` _locally_ to the project. It is possible to install them globally but I have multiple PureScript projects with different compiler versions. Consequently, instructions for the VS Code settings below match local installation and are **not correct** for the global installation. Generally though, global installation is more convenient because VS Code settings work out-of-the box.
+2. Run `npm install`. This should install `purs`, `spago` and `esbuild` _locally_ to the project. It is possible to install them globally but I have multiple PureScript projects with different compiler versions. Consequently, instructions for the VS Code settings below match local installation and are **not correct** for the global installation. Generally though, global installation is more convenient because VS Code settings work out-of-the box.
 
 3. Try compiling for the first time using
 
@@ -66,3 +67,7 @@ To set this up follow these instructions.
     Everything should work from now on.
 
 Once again, these are the steps for the set-up where PureScript and Spago are installed locally. Alternatively you can follow the getting started steps at the [official Web-site](https://www.purescript.org/) or in the [documentation](https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md).
+
+### Building
+
+Use `npm run build` to produce a bundled "executable". It will be placed in the `dist` directory. See the regular `package.json` file for the details and other scripts.
