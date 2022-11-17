@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {
+    "compile": "spago build",
+    "build" : "spago bundle-app --to ./dist/adr.js --platform node",
+    "build-prd" : "spago bundle-app --to ./dist/adr.js --platform node --minify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.43",
+    "purescript": "^0.15.2",
+    "spago": "^0.20.9"
+  }
+}
