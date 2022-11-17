@@ -3,6 +3,7 @@
 /.pulp-cache/
 /output/
 /dist/
+/.vscode/
 /generated-docs/
 /.psc-package/
 /.psc*
